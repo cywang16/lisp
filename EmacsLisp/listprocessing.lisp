@@ -8,10 +8,10 @@
 '(This list includes "text between quotation marks.")
 
 (+ 2 2)
-					;; 4 (#o4, #x4, ?\C-d)
+;; 4 (#o4, #x4, ?\C-d)
 
 '(+ 2 2)
-					;; (+ 2 2)
+;; (+ 2 2)
 
 (this is an unquoted list)
 ;; Debugger entered--Lisp error: (void-function this)
@@ -24,7 +24,7 @@
 ;;   command-execute(eval-last-sexp)
 
 fill-column
-					; 70 (#o106, #x46, ?F)
+;; 70 (#o106, #x46, ?F)
 
 ;; comment commands
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Comment-Commands.html
