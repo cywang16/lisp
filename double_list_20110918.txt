@@ -1,0 +1,72 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+(/ 280 4)
+70
+(- 600 120)
+480
+
+(/ (- 280 42) 4)
+59
+
+(- 440 120)
+320
+
+(/ 440 5)
+88
+
+(- 440 387)
+53
+
+(* 53 5)
+265
+
+(- 440 (* 60 5))
+140
+
+(+ 114 74)
+188
+
+(+ 188 74)
+262
+
+566
+612
+1109
+
+(setq numlist '(1 2 3 4))
+(1 2 3 4)
+
+numlist
+(1 2 3 4)
+
+(cons numlist 5)
+((1 2 3 4) . 5)
+
+(cons 5 numlist)
+(5 1 2 3 4)
+
+(cons 5 nil)
+(5)
+
+(setq num2list nil)
+nil
+
+  (cons (* 2 (car numlist)) num2list)
+(2)
+  (setq numlist (cdr numlist))
+(2 3 4)
+num2list
+nil
+
+(while numlist
+  (setq num2list (cons (* 2 (car numlist)) num2list))
+  (setq numlist (cdr numlist))
+)
+nil
+num2list
+(8 6 4 2)
+
+nil
+
